@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>VetsinTech Web Dev Pre-Work Task</title>
+</head>
+<script>
+    function calculateFunction() {
+        // get value of first text box
+        var a = document.getElementById("input1id").value;
+
+        // get value of second text box
+        var b = document.getElementById("input2id").value;
+
+        // add two values
+        var sum = parseFloat(a) + parseFloat(b);
+
+        // display sum
+        document.write(sum);
+    }
+
+</script>
+<body>
+    <p>VetsinTech supports our current and returning veterans with re-integration services, and by connecting them to<br>
+        the national technology ecosystem. ViT is committed to bringing together a tech-specific network, resources,<br>
+        and programs for our veterans interested in Education, Entrepreneurship, and Employment - the 3E’s!</p>
+    
+    <p>Simple Calculator</p>
+    <p>Enter values in the two text boxes and press the button to see result</p>
+    <p>
+        <input type="text" name="input1" id="input1id" /><br>
+        +</br>
+        <input type="text" name="input2" id="input2id" /><br>
+        <input type="submit" name="calculateButton" id="calculateButton" onclick="calculateFunction()"
+               value="Calculate Now!" />
+    </p>
+
+</body>
+</html>
